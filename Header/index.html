@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Header - Assignment</title>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="brand">
+            <div class="brand_logo">
+                <img src="./images/Stellar_cyberlogo.png" width="70%" alt="stellar_logo">
+            </div>
+        </div>
+        <!-- NAV-BAR -->
+        <nav>
+            <div class="nav_list">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Purchase</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Pricing</a></li>
+                </ul>
+                <a class="button" href="#">
+                    Log In
+                </a>
+            </div>
+        </nav>
+    </header>
+    <!-- ANSWERS TO CLASS QUESTIONS -->
+    <h2>
+        1) What does semantic HTML mean?
+    </h2>
+    <p>
+        It is also the HTML that introduces meaning to the web page rather than just presentation.
+        A semantic element clearly describes its meaning to both the browser and the developer (i.e it clearly defines
+        its content).<br>
+        Examples of semantic elements are form, blockquote, code, em, table and article.
+    </p>
+    <br>
+    <h2>
+        2) Why is it better to put internal styling inside the head instead of the body?
+    </h2>
+    <p>
+        It is better to put internal styling inside the head because when the CSS is declared before the body starts, it
+        enables the styles to load faster. This is the reason users see styles like background color before the content
+        (in the case of slow network connection).
+
+        <br>
+        Also, if the styles are somewhere in the body, the browser has to re-render the page (new and old when loading)
+        when the styles declared has been parsed.
+        This means that you can use the style tag everywhere you want but the only implications are decreased page
+        performance due to possible reflows/repaints once the browser hits styles further down in the page.
+        Putting CSS in body means it is being loaded later.
+    </p>
+</body>
+
+</html>
